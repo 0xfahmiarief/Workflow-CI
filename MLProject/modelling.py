@@ -7,9 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1hU19Ry8FTvo7MoqGELXdnTvo4KFNAkYa
 """
 
-!pip install mlflow==2.19.0
-!pip install scikit-learn==1.5.2
-
 import sklearn
 print(sklearn.__version__)
 
@@ -86,9 +83,3 @@ with mlflow.start_run():
         "Accuracy:",
         accuracy
     )
-
-!find mlruns | head -50
-
-!mlflow ui --host 0.0.0.0 --port 5000
-
-!ps aux | grep mlflow
