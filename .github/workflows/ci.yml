@@ -32,7 +32,7 @@ jobs:
       - name: Run mlflow project
         run: |
           cd MLProject
-          mlflow run .
+          python modelling.py
 
       - name: Get latest MLflow run_id
         run: |
